@@ -20,7 +20,7 @@ syn keyword wyvBool true false
 
 syn match wyvColon ":" nextgroup=wyvType skipwhite
 
-syn keyword wyvType Int Dyn String Unit Boolean Option List Map
+syn keyword wyvType Int Float Dyn String Unit Boolean Option List Map
 syn match wyvType "[A-Z][a-zA-Z0-9.]*" contained
 
 
