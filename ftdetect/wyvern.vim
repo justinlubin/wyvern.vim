@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.wyv set filetype=wyvern
+au BufNewFile,BufRead *.wyv,*.wyt set filetype=wyvern
