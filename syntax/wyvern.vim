@@ -16,6 +16,9 @@ syn match wyvNumber '\<[+-]\=\d\+\>'
 syn match wyvComment '\/\/.*'
 syn region wyvComment start="/\*" end="\*/" extend
 
+syn region wyvString start='"' skip=/\v\\./ end='"'
+syn region wyvString start="'" skip=/\v\\./ end="'"
+
 syn keyword wyvBool true false
 
 syn match wyvColon ":" nextgroup=wyvType skipwhite
@@ -32,5 +35,6 @@ hi def link wyvFunction Function
 hi def link wyvNumber Number
 hi def link wyvComment Comment
 hi def link wyvTypeDef Identifier
+hi def link wyvString String
 
 let b:current_syntax = "wyvern"
