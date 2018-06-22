@@ -2,7 +2,7 @@ if exists("b:current_syntax")
     finish
 endif
 
-syn keyword wyvKeyword import var val new resource this delegate to require metadata module comprises extends if then else objtype as instantiate tagged match default case of effect
+syn keyword wyvKeyword import var val new resource this delegate to require metadata module comprises extends if then elif else objtype as instantiate tagged match default case of effect
 
 syn keyword wyvKeyword def nextgroup=wyvFunction skipwhite
 syn keyword wyvKeyword type nextgroup=wyvTypeDef skipwhite
